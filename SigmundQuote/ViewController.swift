@@ -7,8 +7,18 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+
+
+
+class ViewController: UIViewController, AVAudioPlayerDelegate {
+    
+    //これどういう構文？
+    //ここから音声ファイルのプログラム
+    var audioPlayer : AVAudioPlayer!
+    
+    
     @IBOutlet weak var fukidashi: UIImageView!
     let freudQuoteArray = ["Fukidashi1", "Fukidashi2", "Fukidashi3", "Fukidashi4", "Fukidashi5"]
     var randomNumber: Int = 0
