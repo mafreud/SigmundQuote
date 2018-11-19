@@ -20,8 +20,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     @IBOutlet weak var fukidashi: UIImageView!
-    let freudQuoteArray = ["Fukidashi1", "Fukidashi2", "Fukidashi3", "Fukidashi4", "Fukidashi5"]
-    var randomNumber: Int = 0
+    let 引用の配列 = ["Fukidashi1", "Fukidashi2", "Fukidashi3", "Fukidashi4", "Fukidashi5"]
+    var 乱数生成: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +34,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     func quoteRoll () {
-        randomNumber = Int.random(in: 0 ... 4)
-        fukidashi.image = UIImage(named: freudQuoteArray[randomNumber])
+        乱数生成 = Int.random(in: 0 ... 4)
+        fukidashi.image = UIImage(named: 引用の配列[乱数生成])
     }
     
 }
